@@ -1,4 +1,4 @@
-<template>
+n<template>
     <div>
         <img class="image-style" :src="proInfo.itemPic">
         <p>

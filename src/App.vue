@@ -6,13 +6,13 @@
     <div>
         <b-container class="bv-example-row">
           <b-row class="text-center">
-          <b-col><categories /></b-col>
-          <b-col cols="9"><SliderProducts /></b-col>
+            <b-col class="col-style" cols="2"><categories /></b-col>
+            <b-col><SliderProducts /></b-col>
           </b-row>
         </b-container>
     </div>
        <Products v-bind:proInfo="productInfo" />
-    </div>
+  </div>
 </template>
 
 <script>
@@ -90,12 +90,24 @@ export default {
         itemPic: require('./assets/leather-sandals.jpg'),
         itemName: 'Leather Sandals',
         price: 6000
+        },
+        {
+        id: 11,
+        itemPic: require('./assets/leather-sandals.jpg'),
+        itemName: 'Leather Sandals',
+        price: 6000
+        },
+        {
+        id: 12,
+        itemPic: require('./assets/leather-sandals.jpg'),
+        itemName: 'Leather Sandals',
+        price: 6000
         }
 
       ]
     }
   }
-  
+
 }
 </script>
 
@@ -111,4 +123,5 @@ export default {
 .bv-example-row{
   margin-top: 3rem;
 }
+
 </style>

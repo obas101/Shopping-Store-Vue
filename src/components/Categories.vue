@@ -1,17 +1,17 @@
 <template>
     <div>
+        <h4><strong>Categories</strong></h4>
         <b-list-group>
-  <b-list-group-item href="#" disabled variant="dark" >Shoes Categories</b-list-group-item>
-  <b-list-group-item href="#">Pams</b-list-group-item>
-  <b-list-group-item href="#">Sandals</b-list-group-item>
-  <b-list-group-item href="#">Casual</b-list-group-item>
-  <b-list-group-item href="#">Boots</b-list-group-item>
-  <b-list-group-item href="#">Formal Shoes</b-list-group-item>
-  <b-list-group-item href="#">Loafers and Slip-ons</b-list-group-item>
-  <b-list-group-item href="#">Canvas</b-list-group-item>
-  <b-list-group-item href="#">Boat Shoes</b-list-group-item>
-  <b-list-group-item href="#">Work and Safety</b-list-group-item>
-</b-list-group>
+            <b-list-group-item class="list-style" href="#">Pams</b-list-group-item>
+            <b-list-group-item class="list-style" href="#">Sandals</b-list-group-item>
+            <b-list-group-item class="list-style" href="#">Casual</b-list-group-item>
+            <b-list-group-item class="list-style" href="#">Boots</b-list-group-item>
+            <b-list-group-item class="list-style" href="#">Formal Shoes</b-list-group-item>
+            <b-list-group-item class="list-style" href="#">Loafers and Slip-ons</b-list-group-item>
+            <b-list-group-item class="list-style" href="#">Canvas</b-list-group-item>
+            <b-list-group-item class="list-style" href="#">Boat Shoes</b-list-group-item>
+            <b-list-group-item class="list-style" href="#">Work and Safety</b-list-group-item>
+        </b-list-group>
     </div>
 </template>
 
@@ -22,5 +22,9 @@ export default {
 </script>
 
 <style scoped>
-
+.list-style {
+    background: #212529;
+    color: white;
+    text-align: left;
+}
 </style>
