@@ -6,13 +6,30 @@
     <div>
         <b-container class="bv-example-row">
           <b-row class="text-center">
-            <b-col class="col-style" cols="2"><categories /></b-col>
-            <b-col><SliderProducts /></b-col>
+            <b-col class="col-style" cols="3"><categories /></b-col>
+            <b-col class="slidesty"><SliderProducts /></b-col>
           </b-row>
         </b-container>
     </div>
+    <div>
        <Products v-bind:proInfo="productInfo" />
+    </div>
+    <div class="footy">
+    <Footer />
+    </div>
+
+    <div  class="footy">
+      <b-container class="bv-example-row footy" >
+          <b-row class="text-center">
+            <b-col class="col-style" ><Socials /></b-col>
+            <b-col><Payments /></b-col>
+          </b-row>
+        </b-container>
+    </div>
+    
+
   </div>
+  
 </template>
 
 <script>
@@ -20,13 +37,20 @@ import Header from './components/Header.vue'
 import SliderProducts from './components/SliderProducts.vue'
 import Categories from './components/Categories.vue'
 import Products from './components/Products.vue'
+import Footer from './components/Footer.vue'
+import Socials from './components/Socials.vue'
+import Payments from './components/Payments.vue'
 export default {
   name: 'App',
   components: {
     Header,
     SliderProducts,
     Categories,
-    Products
+    Products,
+    Footer,
+    Payments,
+    Socials
+
   },
   data() {
     return {
@@ -120,8 +144,12 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   
 }
-.bv-example-row{
-  margin-top: 3rem;
+.slidesty {
+  height: 460px
 }
-
+.footy{
+  background-color: #212529;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 </style>

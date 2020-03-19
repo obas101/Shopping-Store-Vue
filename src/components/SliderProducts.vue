@@ -38,6 +38,8 @@ export default {
 
 <style scoped>
    .sliderh{
-  height: 460.77;
+  height: 460px;
+  width: 800px;
+  
 }
 </style>
