@@ -18,7 +18,7 @@
     <Footer />
     </div>
 
-    <div  class="footy">
+    <div  class="foot">
       <b-container class="bv-example-row footy" >
           <b-row class="text-center">
             <b-col class="col-style" ><Socials /></b-col>
@@ -149,7 +149,12 @@ export default {
 }
 .footy{
   background-color: #212529;
-  padding-top: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+  
+}
+.foot{
+  background-color: #212529;
   padding-bottom: 1rem;
 }
 </style>
