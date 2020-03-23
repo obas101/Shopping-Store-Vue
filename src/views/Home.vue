@@ -12,18 +12,7 @@
     <div>
        <Products v-bind:proInfo="productInfo" />
     </div>
-    <div class="footy">
-    <Footer />
-    </div>
-
-    <div  class="foot">
-      <b-container class="bv-example-row footy" >
-          <b-row class="text-center">
-            <b-col class="col-style" ><Socials /></b-col>
-            <b-col><Payments /></b-col>
-          </b-row>
-        </b-container>
-    </div>
+    
     
 
   </div>
@@ -34,20 +23,13 @@
 import SliderProducts from '../components/SliderProducts.vue'
 import Categories from '../components/Categories.vue'
 import Products from '../components/Products.vue'
-import Footer from '../components/Footer.vue'
-import Socials from '../components/Socials.vue'
-import Payments from '../components/Payments.vue'
+
 export default {
   name: 'Home',
   components: {
         SliderProducts,
     Categories,
-    Products,
-    Footer,
-    Payments,
-    Socials
-
-  },
+    Products  },
   data() {
     return {
       productInfo: [
