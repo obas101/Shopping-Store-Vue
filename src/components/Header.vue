@@ -1,10 +1,15 @@
 <template>
+
 <div>
   <b-navbar class="headerdes" toggleable="lg" type="dark" variant="dark">
     <i class="fas fa-shoe-prints"></i>
-    <b-navbar-brand href="#">Obas Shoes Store</b-navbar-brand>
+    <b-navbar-brand href="#">Just Shoes</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+   
 
     <b-collapse id="nav-collapse" is-nav>
       
@@ -14,6 +19,7 @@
           <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
           <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
         </b-nav-form>
+
 
         
 
