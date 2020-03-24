@@ -2,7 +2,13 @@
     <b-container class="bv-example-row">
   <b-row>
     <b-col>
-        
+        <img class="image-style" :src="proInfo.itemPic">
+        <p>
+            {{proInfo[0].itemName}}
+        </p>
+        <p>
+           &#8358;{{proInfo[0].price}}
+        </p>
     </b-col>
 
 
@@ -24,9 +30,6 @@
 
 export default {
     name: 'ProductInfo',
-    components: {
-        
-    },
     props: [
         'proinfo'
     ]

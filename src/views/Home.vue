@@ -37,25 +37,32 @@ export default {
         id: 1,
         itemPic: require('../assets/Casual-Khaki-Shoe.jpg'),
         itemName: 'Casual Khaki Shoe',
-        price: 15000
+        price: 15000,
+        description: 'Quality Casual Shoe'
         },
         {
         id: 2,
         itemPic: require('../assets/Dark-Leather-Pam.jpg'),
         itemName: 'Dark-Leather-Pam',
-        price: 10000
+        price: 10000,
+                description: 'Quality Leather pam'
+
         },
         {
         id: 3,
         itemPic: require('../assets/Fancy-Pam.jpg'),
         itemName: 'Fancy Pam',
-        price: 50000
+        price: 50000,
+                description: 'Quality Fancy Pam Shoe'
+
         },
         {
         id: 4,
         itemPic: require('../assets/Fancy-Sneakers.jpg'),
         itemName: 'Fancy Sneakers',
-        price: 30000
+        price: 30000,
+                description: 'Quality Fancy Sneakers Shoe'
+
         },
         {
         id: 5,
