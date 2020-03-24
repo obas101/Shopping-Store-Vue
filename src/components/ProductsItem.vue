@@ -7,7 +7,7 @@ n<template>
         <p>
            &#8358;{{proInfo.price}}
         </p>
-        <b-button variant="success">Buy Now</b-button>    </div>
+        <b-button variant="success"><router-link to="/productinfo">Buy Now</router-link></b-button>    </div>
 </template>
 
 <script>

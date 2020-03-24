@@ -6,6 +6,7 @@
                 v-bind:key="display.id" v-for="display in proInfo"
                 >
                 <productsItem v-bind:proInfo="display"/>
+                
             </b-card>
         </div>
 
