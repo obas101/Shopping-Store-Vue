@@ -55,10 +55,12 @@ export default {
         text-decoration: none;
         list-style-type: none;
         font-size: 14px;
+        text-align: left;
 
     }
     h6 {
         color: white;
+        text-align: left;
     }
 
     .ul {

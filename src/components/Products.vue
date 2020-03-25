@@ -3,7 +3,7 @@
             <b-card  
                 
                 class="mb-2 displayPro"
-                v-bind:key="display.id" v-for="display in proInfo"
+                v-bind:key="display.id" v-for="display in allProducts"
                 >
                 <productsItem v-bind:proInfo="display"/>
                 
@@ -19,7 +19,13 @@ export default {
     components: {
         ProductsItem
         },
-    props: ['proInfo']
+    props: ['proInfo'],
+    computed: {
+      allProducts(){
+        return this.$store.state.productInfo;
+      }
+    }
+    
 }
 </script>
 
