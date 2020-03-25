@@ -19,7 +19,7 @@ const store = new Vuex.Store({
             itemPic: require('./assets/Dark-Leather-Pam.jpg'),
             itemName: 'Dark-Leather-Pam',
             price: 10000,
-                    description: 'Quality Leather pam'
+                    description: 'Quality Leather pam Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex '
     
             },
             {
@@ -27,7 +27,7 @@ const store = new Vuex.Store({
             itemPic: require('./assets/Fancy-Pam.jpg'),
             itemName: 'Fancy Pam',
             price: 50000,
-                    description: 'Quality Fancy Pam Shoe'
+                    description: 'Quality Fancy Pam Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex '
     
             },
             {
@@ -35,56 +35,64 @@ const store = new Vuex.Store({
             itemPic: require('./assets/Fancy-Sneakers.jpg'),
             itemName: 'Fancy Sneakers',
             price: 30000,
-                    description: 'Quality Fancy Sneakers Shoe'
+                    description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex '
     
             },
             {
             id: 5,
             itemPic: require('./assets/Heavy-boot.jpg'),
             itemName: 'Heavy Boot',
-            price: 20000
+            price: 20000,
+            description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             },
             {
             id: 6,
             itemPic: require('./assets/leather-sandals.jpg'),
             itemName: 'Leather Sandals',
-            price: 30000
+            price: 30000,
+            description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             },
             {
             id: 7,
             itemPic: require('./assets/Mens-Simple-Pam.jpg'),
             itemName: 'Mens Simple Pam',
-            price: 50000
+            price: 50000,
+            description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             },
             {
             id: 8,
             itemPic: require('./assets/Mens-Brogue.jpg'),
             itemName: 'Mens Brogue',
-            price: 45000
+            price: 45000,
+            description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             },
             {
             id: 9,
             itemPic: require('./assets/Mens-Simple-Pam.jpg'),
             itemName: 'PU Leather Black Shoe',
-            price: 100000
+            price: 100000,
+            description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             },
             {
             id: 10,
             itemPic: require('./assets/leather-sandals.jpg'),
             itemName: 'Leather Sandals',
-            price: 6000
+            price: 6000,
+            description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             },
             {
             id: 11,
             itemPic: require('./assets/leather-sandals.jpg'),
             itemName: 'Leather Sandals',
-            price: 6000
+            price: 6000,
+            description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             },
             {
             id: 12,
             itemPic: require('./assets/leather-sandals.jpg'),
             itemName: 'Leather Sandals',
-            price: 6000
+            price: 6000,
+            description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             }
         ],
         selectedProduct: null
