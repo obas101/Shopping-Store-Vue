@@ -37,9 +37,9 @@ export default {
 </script>
 
 <style scoped>
-   .sliderh{
-  height: 460px;
-  width: 800px;
+   /* .sliderh{
+  height: 500px;
+  width: 500px;
   
-}
+} */
 </style>

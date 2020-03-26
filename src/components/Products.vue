@@ -32,7 +32,7 @@ export default {
 <style scoped>
     .displayPro {
         display: inline-block;
-        margin-left: 4.5rem;
+        /* margin-left: 4.5rem; */
         justify-content: center;
         margin-top: 3rem;
         text-align: center;
