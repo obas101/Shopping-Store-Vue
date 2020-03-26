@@ -99,6 +99,7 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (min-width: 700px){
 .row-inner {
     display: flex;
     flex-direction: row;
@@ -179,5 +180,5 @@ export default {
     color: white;
     font-weight: bolder;
 }
-
+}
 </style>
