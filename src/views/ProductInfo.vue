@@ -19,7 +19,9 @@
                 <p><strong>&#8358; {{proInfo.price}}</strong>
                 </p>
                 <hr>
-                <button class="btn-cart">ADD TO CART</button>
+                <b-button variant="info" class="btn-cart">ADD TO CART</b-button>
+
+                <!-- <button class="btn-cart">ADD TO CART</button> -->
                 <hr>
                 <h6>PROMOTIONS</h6>
                 <p>
@@ -39,14 +41,16 @@
         <h6>DELIVERY & RETURNS</h6>
         <hr>
         <div class="row-right">
-            <div><i class="fas fa-car-side icons"></i></div>
+            <div class="icon-sty">
+                <i class="fas fa-car-side icons"></i>
+            </div>
                 <div class="info-right1"><strong>Delivery Information</strong>
                     <p>Normally delivered between Friday 27 Mar and Monday 30 Mar. 
                         Please check exact dates in the Checkout page.See more</p>
                 </div>
         </div>
         <div class="row-right">
-            <div><i class="fas fa-undo-alt icons"></i></div>
+            <div class="icon-sty"><i class="fas fa-undo-alt icons"></i></div>
                 <div class="info-right1"><strong>Return Policy</strong>
                     <p>Free return within 15 days for Jumia Mall items
                  and 7 days for other eligible items.See more</p>
@@ -98,6 +102,7 @@ export default {
 .row-inner {
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 .col-inner1{
     width: 35%;
@@ -117,21 +122,31 @@ export default {
     display: flex;
     flex-direction: row;
     /* padding-left:2rem; */
+    margin-top: 2rem;
 }
 .column-col1 {
     width: 80%;
     text-align: left;
-    background-color: #F5F5F5;
+    background-color: white;
     padding: 1rem;
+    margin-right: 1rem;
+    margin-left: 4rem;
+    border-radius: 0.5rem;
 
 }
 .column-col2{
     background-color: white;
     width:20%;
+    padding: 1rem;
+    margin-right: 4rem;
+    border-radius: 0.5rem;
 }
 .image-style {
     width: 305px;
     height: 305px;
+}
+.icon-sty{
+    width: 40px;
 }
 .main-left {
     width: 70%;
@@ -147,18 +162,18 @@ export default {
 }
 .icons {
         color: black;
-        margin-right: 2rem;
+        /* margin-right: 2rem; */
         font-size: 1.5rem;
         
     }
 .delivery-info{
     text-align: left;
+    font-size: 12px;
 }
 .body{
     background-color: #F5F5F5;
 }
 .btn-cart {
-    background-color: #F68B1E;
     direction: flex;
     width: 100%;
     color: white;
