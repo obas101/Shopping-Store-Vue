@@ -101,10 +101,12 @@ export default {
 }
 .col-inner1{
     width: 35%;
+    background-color: white;
 }
 .col-inner2{
     width: 70%;
     margin-left: 1rem;
+    background-color: white;
 }
 .top-view {
     padding: 1rem;
@@ -114,10 +116,10 @@ export default {
 .row-column {
     display: flex;
     flex-direction: row;
-    padding-left:2rem;
+    /* padding-left:2rem; */
 }
 .column-col1 {
-    width: 70%;
+    width: 80%;
     text-align: left;
     background-color: #F5F5F5;
     padding: 1rem;
