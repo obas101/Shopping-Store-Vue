@@ -69,7 +69,6 @@ export default {
 .slidesty {
   /* height: 30rem; */
   width: 80%;
-  background-color: white;
   margin-left: 3rem;
   margin-right: 4rem;
   padding: 1rem;

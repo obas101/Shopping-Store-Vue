@@ -38,7 +38,7 @@
 
     <div class="column-col2">
         <div class="delivery-info">
-        <h6>DELIVERY & RETURNS</h6>
+        <h6>DELIVERY and RETURNS</h6>
         <hr>
         <div class="row-right">
             <div class="icon-sty">
@@ -56,13 +56,8 @@
                  and 7 days for other eligible items.See more</p>
                 </div>
         </div>
-        
-        
         </div>
     </div>
-
-
-
   </div>
 
     <div class="row-column">
@@ -99,7 +94,6 @@ export default {
 </script>
 
 <style scoped>
-@media only screen and (min-width: 700px){
 .row-inner {
     display: flex;
     flex-direction: row;
@@ -122,7 +116,6 @@ export default {
 .row-column {
     display: flex;
     flex-direction: row;
-    /* padding-left:2rem; */
     margin-top: 2rem;
 }
 .column-col1 {
@@ -163,7 +156,6 @@ export default {
 }
 .icons {
         color: black;
-        /* margin-right: 2rem; */
         font-size: 1.5rem;
         
     }
@@ -179,6 +171,5 @@ export default {
     width: 100%;
     color: white;
     font-weight: bolder;
-}
 }
 </style>
