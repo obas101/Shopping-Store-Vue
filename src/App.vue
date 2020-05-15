@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <v-app>
     <Header />
     <router-view/>
 
@@ -15,7 +15,7 @@
           </b-row>
         </b-container>
     </div>
-  </div>
+  </v-app>
 </template>
 <script>
 import Header from './components/Header.vue'
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style>
-#app {
+.app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,7 +44,7 @@ export default {
   background-color: #F5F5F5;
 }
 
-#nav {
+/* #nav {
   padding: 30px;
 }
 
@@ -55,5 +55,5 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
