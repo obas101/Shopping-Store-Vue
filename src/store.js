@@ -95,6 +95,9 @@ const store = new Vuex.Store({
             description: 'Quality Fancy Sneakers Shoe Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita'
             }
         ],
+        carouselImages: [
+
+        ],
         selectedProduct: null
 
     },

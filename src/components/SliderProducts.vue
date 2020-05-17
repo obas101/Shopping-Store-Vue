@@ -1,11 +1,9 @@
 <template>
     <div>
       <div>
-        <b-carousel
-          id="carousel-fade"
-          style="text-shadow: 0px 0px 2px #000; width"
-          fade
-          indicators
+        <v-carousel
+          cycle
+          height="400"
         >
           <b-carousel-slide class="sliderh"
             :img-src="require('../assets/sliders/slider2.jpg')"
@@ -23,7 +21,7 @@
             :img-src="require('../assets/sliders/slider5.jpg')"
           ></b-carousel-slide>
 
-        </b-carousel>
+        </v-carousel>
           <b-carousel-slide class="sliderh"
             :img-src="require('../assets/sliders/slider7.jpg')"
           ></b-carousel-slide>
