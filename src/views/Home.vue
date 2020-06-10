@@ -4,34 +4,38 @@
     <div style="width: 100%">
         <div class="main">
           <div class="main-row">
-            <div class="col-style" ><categories /></div>
+            <div class="col-style"><categories /></div>
             <div class="slidesty"><SliderProducts /></div>
           </div>
         </div>
     </div>
     <div>
-       <Products/>
+       <Products />
     </div>
-    
-    
-
   </div>
   
 </template>
 
 <script>
-import SliderProducts from '../components/SliderProducts.vue'
+import { mapActions } from 'vuex'
+
 import Categories from '../components/Categories.vue'
+import SliderProducts from '../components/SliderProducts.vue'
 import Products from '../components/Products.vue'
 
 export default {
   name: 'Home',
   components: {
-        SliderProducts,
     Categories,
-    Products  },
-    
-
+    SliderProducts,
+    Products  
+    },
+    methods: {
+    ...mapActions(['getHomeProducts'])
+    },
+    mounted () {
+      this.getHomeProducts()
+    }
 }
 </script>
 
@@ -49,7 +53,6 @@ export default {
   text-align: center;
 }
 
-@media only screen and (min-width: 700px){
   .main {
     margin-top: 3rem;
   }
@@ -83,6 +86,5 @@ export default {
 .foot{
   background-color: #212529;
   padding-bottom: 1rem;
-}
 }
 </style>

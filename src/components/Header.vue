@@ -1,19 +1,21 @@
 <template>
 <nav>
   <v-toolbar flat app background-color="grey">
-    <v-toolbar-title class="text-uppercase grey--text">
+    <v-toolbar-title class="text-uppercase grey--text !important" >
+      <router-link to="/">
       <span class="font-weight-light">Just</span>
       <span class="font-weight-bold">Shoes</span>
+      </router-link>    
     </v-toolbar-title>
     <v-spacer></v-spacer>
-  
       <v-text-field
         placeholder="Search"
         rounded
         dense
-        append-icon="search red"
+        append-icon="search"
         outlined
         class="shrink mt-6"
+        color="#FFDA00"
         active
       ></v-text-field>
 

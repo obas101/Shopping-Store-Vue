@@ -5,26 +5,27 @@
           cycle
           height="400"
         >
-          <b-carousel-slide class="sliderh"
-            :img-src="require('../assets/sliders/slider2.jpg')"
-          ></b-carousel-slide>
+          <v-carousel-item
+          >
+          <v-img :src="require('../assets/sliders/slider2.jpg')"></v-img>
+          </v-carousel-item>
 
-          <b-carousel-slide class="sliderh"
-            :img-src="require('../assets/sliders/slider3.jpg')"
-          ></b-carousel-slide>
+          <v-carousel-item 
+            :src="require('../assets/sliders/slider3.jpg')"
+          ></v-carousel-item>
 
-          <b-carousel-slide class="sliderh"
-            :img-src="require('../assets/sliders/slider4.jpg')"
-          ></b-carousel-slide>
+          <v-carousel-item
+            :src="require('../assets/sliders/slider4.jpg')"
+          ></v-carousel-item>
           
-          <b-carousel-slide class="sliderh"
-            :img-src="require('../assets/sliders/slider5.jpg')"
-          ></b-carousel-slide>
+          <v-carousel-item
+            :src="require('../assets/sliders/slider5.jpg')"
+          ></v-carousel-item>
 
         </v-carousel>
-          <b-carousel-slide class="sliderh"
-            :img-src="require('../assets/sliders/slider7.jpg')"
-          ></b-carousel-slide>
+          <v-carousel-item
+            :src="require('../assets/sliders/slider7.jpg')"
+          ></v-carousel-item>
         
       </div>
     </div>
@@ -32,15 +33,10 @@
 
 <script>
 export default {
-    name: 'SliderProducts'
-    
+    name: 'SliderProducts', 
 }
 </script>
 
 <style scoped>
-   .sliderh{
-  height: 500px;
-  width: 500px;
-  
-}
+   
 </style>

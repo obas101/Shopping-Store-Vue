@@ -1,11 +1,10 @@
 <template>
     <div class="body">
-    
   <div class="row-column">
     <div class="column-col1">
         <div class="row-inner">
             <div class="col-inner1">
-                <img class="image-style" :src="proInfo.itemPic">
+                <img class="image-style" :src="proInfo.activeProduct.productThumb">
                 <hr>
                 <p>
                     Share this Product
@@ -14,14 +13,13 @@
                 <i class="fab fa-twitter icons"></i>
             </div>
             <div class="col-inner2">
-                <p>{{proInfo.itemName}}</P>
+                <p>{{proInfo.activeProduct.productName}}</P>
                 <hr>
-                <p><strong>&#8358; {{proInfo.price}}</strong>
+                <p><strong>&#8358; {{proInfo.activeProduct.productPrice}}</strong>
                 </p>
                 <hr>
                 <b-button variant="info" class="btn-cart">ADD TO CART</b-button>
 
-                <!-- <button class="btn-cart">ADD TO CART</button> -->
                 <hr>
                 <h6>PROMOTIONS</h6>
                 <p>
@@ -65,7 +63,7 @@
             <div>
                 <h5>Product Description</h5>
                 <hr>
-                {{proInfo.description}}
+                {{proInfo.activeProduct.productDescription}}
 
             </div>
         </div>
@@ -74,27 +72,26 @@
         </div>
 
     </div>
-
     </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 
 export default {
     name: 'ProductInfo',
-    props: [
-        'proinfo'
-    ],
-    computed: {
-        proInfo() {
-            return this.$store.state.selectedProduct;
+    computed: mapState({
+            proInfo: 'products'
+        }),
+        created () {
+            console.log(this.proInfo);
         }
-    }
 }
+
 </script>
 
 <style scoped>
-.row-inner {
+/* .row-inner {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -171,5 +168,5 @@ export default {
     width: 100%;
     color: white;
     font-weight: bolder;
-}
+} */
 </style>
