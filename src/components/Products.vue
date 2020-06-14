@@ -1,7 +1,7 @@
 <template>
         <div class="stylusdiv">
             <div v-bind:key="display.productId" v-for="display in allProducts.products" class="tile-style">
-            <v-card>
+            <v-card :to="`/productinfo/${display.productId}/${display.productName.replace(/[' ']+/g, '-').toLowerCase()}`">
             
             <v-img
                 :src="display.productThumb"
@@ -36,7 +36,7 @@
       </v-row>
       </v-card-text>
             <v-card-action>
-                <v-btn :to="`/productinfo/${display.productId}/${display.productName.replace(/[' ']+/g, '-').toLowerCase()}`" color="#FFDA00" small="">
+                <v-btn color="#FFDA00" small="">
                     ADD TO CART
                 </v-btn>
             </v-card-action>

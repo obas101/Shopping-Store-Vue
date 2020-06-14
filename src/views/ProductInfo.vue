@@ -1,19 +1,28 @@
 <template>
-    <div class="body">
-  <div class="row-column">
-    <div class="column-col1">
-        <div class="row-inner">
-            <div class="col-inner1">
-                <img class="image-style" :src="proInfo.activeProduct.productThumb">
-                <hr>
-                <p>
-                    Share this Product
-                </p>
-                <i class="fab fa-facebook-f icons"></i>
-                <i class="fab fa-twitter icons"></i>
-            </div>
-            <div class="col-inner2">
-                <p>{{proInfo.activeProduct.productName}}</P>
+    <v-container>
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <v-row
+        justify = "center"
+    >
+      <v-col
+        cols="12"
+        md="8"
+      >
+
+            <v-row no-gutters>
+      
+                <v-col>
+                    
+                    <img class="image-style" :src="proInfo.activeProduct.productThumb" width="383px">
+                        <hr>
+                        <p>
+                            Share this Product
+                        </p>
+                        <i class="fab fa-facebook-f icons"></i>
+                        <i class="fab fa-twitter icons"></i>
+                </v-col>
+                <v-col>
+                        <p>{{proInfo.activeProduct.productName}}</P>
                 <hr>
                 <p><strong>&#8358; {{proInfo.activeProduct.productPrice}}</strong>
                 </p>
@@ -28,51 +37,42 @@
                 <p>
                     Use card payment for a quick and safer delivery
                 </p>
-            </div>
-        </div>
-    </div>
 
+                </v-col>
+            </v-row>
 
+      </v-col>
 
-    <div class="column-col2">
-        <div class="delivery-info">
+      <v-col
+        cols="6"
+        md="4"
+      >
         <h6>DELIVERY and RETURNS</h6>
         <hr>
-        <div class="row-right">
-            <div class="icon-sty">
-                <i class="fas fa-car-side icons"></i>
-            </div>
-                <div class="info-right1"><strong>Delivery Information</strong>
+        <i class="fas fa-car-side icons"></i>
+        <div class="info-right1"><strong>Delivery Information</strong>
                     <p>Normally delivered between Friday 27 Mar and Monday 30 Mar. 
                         Please check exact dates in the Checkout page.See more</p>
                 </div>
-        </div>
-        <div class="row-right">
-            <div class="icon-sty"><i class="fas fa-undo-alt icons"></i></div>
+        <div class="icon-sty"><i class="fas fa-undo-alt icons"></i></div>
                 <div class="info-right1"><strong>Return Policy</strong>
                     <p>Free return within 15 days for Jumia Mall items
                  and 7 days for other eligible items.See more</p>
                 </div>
-        </div>
-        </div>
-    </div>
-  </div>
+        
+      
 
-    <div class="row-column">
-        <div class="column-col1">
-            <div>
+      </v-col>
+
+    </v-row>
+
+    <div>
                 <h5>Product Description</h5>
                 <hr>
                 {{proInfo.activeProduct.productDescription}}
 
             </div>
-        </div>
-        <div class="column-col2">
-
-        </div>
-
-    </div>
-    </div>
+  </v-container>
 </template>
 
 <script>
