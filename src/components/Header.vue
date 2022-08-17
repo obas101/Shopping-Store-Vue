@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <v-container>
     <v-toolbar background-color="grey">
       <v-toolbar-title class="text-uppercase grey--text !important">
         <router-link to="/">
@@ -32,11 +32,11 @@
       </v-btn>
 
       <v-btn flat text>
-        <v-icon left color="#FFDA00">shopping_cart</v-icon>
+        <v-icon left color="blue">shopping_cart</v-icon>
         <span class="font-weight-medium">Cart</span>
       </v-btn>
     </v-toolbar>
-  </nav>
+  </v-container>
 </template>
 
 <script>

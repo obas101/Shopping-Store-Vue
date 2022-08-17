@@ -1,5 +1,5 @@
 <template>
-  <div style="width= 100%">
+  <div>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol
         xmlns="http://www.w3.org/2000/svg"
@@ -26,21 +26,21 @@
     <form
       novalidate="novalidate"
       onsubmit="return false;"
-      class="searchbox sbx-amazon"
+      class="searchbox sbx-custom"
     >
       <div role="search" class="sbx-amazon__wrapper">
         <input
           type="search"
           name="search"
-          placeholder="Search your website"
+          placeholder="Search products, brands and categories"
           autocomplete="off"
           required="required"
-          class="sbx-amazon__input"
+          class="sbx-custom__input"
         />
         <button
           type="submit"
           title="Submit your search query."
-          class="sbx-amazon__submit"
+          class="sbx-custom__submit"
         >
           <svg role="img" aria-label="Search">
             <use xlink:href="#sbx-icon-search-11"></use>
@@ -49,7 +49,7 @@
         <button
           type="reset"
           title="Clear the search query."
-          class="sbx-amazon__reset"
+          class="sbx-custom__reset"
         >
           <svg role="img" aria-label="Reset">
             <use xlink:href="#sbx-icon-clear-2"></use>
@@ -67,4 +67,181 @@ export default {
 </script>
 
 <style scoped>
+.sbx-custom {
+  display: inline-block;
+  position: relative;
+  width: 600px;
+  height: 39px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.sbx-custom__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.sbx-custom__input {
+  display: inline-block;
+  -webkit-transition: box-shadow 0.4s ease, background 0.4s ease;
+  transition: box-shadow 0.4s ease, background 0.4s ease;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  background: #ffffff;
+  padding: 0;
+  padding-right: 75px;
+  padding-left: 11px;
+  width: 100%;
+  height: 39px;
+  vertical-align: middle;
+  white-space: normal;
+  font-size: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.sbx-custom__input::-webkit-search-decoration,
+.sbx-custom__input::-webkit-search-cancel-button,
+.sbx-custom__input::-webkit-search-results-button,
+.sbx-custom__input::-webkit-search-results-decoration {
+  display: none;
+}
+
+.sbx-custom__input:hover {
+  box-shadow: inset 0 0 0 1px #e6e6e6;
+}
+
+.sbx-custom__input:focus,
+.sbx-custom__input:active {
+  outline: 0;
+  box-shadow: inset 0 0 0 1px #8797ff;
+  background: #ffffff;
+}
+
+.sbx-custom__input::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+.sbx-custom__input::-moz-placeholder {
+  color: #aaaaaa;
+}
+
+.sbx-custom__input:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+.sbx-custom__input::placeholder {
+  color: #aaaaaa;
+}
+
+.sbx-custom__submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: inherit;
+  margin: 0;
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  background-color: #8797ff;
+  padding: 0;
+  width: 47px;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sbx-custom__submit::before {
+  display: inline-block;
+  margin-right: -4px;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.sbx-custom__submit:hover,
+.sbx-custom__submit:active {
+  cursor: pointer;
+}
+
+.sbx-custom__submit:focus {
+  outline: 0;
+}
+
+.sbx-custom__submit svg {
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  fill: #202f40;
+}
+
+.sbx-custom__reset {
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 54px;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.sbx-custom__reset:focus {
+  outline: 0;
+}
+
+.sbx-custom__reset svg {
+  display: block;
+  margin: 4px;
+  width: 13px;
+  height: 13px;
+}
+
+.sbx-custom__input:valid ~ .sbx-custom__reset {
+  display: block;
+  -webkit-animation-name: sbx-reset-in;
+  animation-name: sbx-reset-in;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+}
+
+@-webkit-keyframes sbx-reset-in {
+  0% {
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes sbx-reset-in {
+  0% {
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
 </style>

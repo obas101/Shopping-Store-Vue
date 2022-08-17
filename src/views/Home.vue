@@ -1,42 +1,43 @@
 <template>
   <div id="app">
-    
-    <div style="width: 100%">
+    <v-container class="pa-12">
+      <div>
         <div class="main">
-          <div class="main-row">
-            <div class="col-style"><categories /></div>
-            <div class="slidesty"><SliderProducts /></div>
-          </div>
+          <v-row>
+            <v-col cols="2"><categories /></v-col>
+            <v-spacer></v-spacer>
+            <v-col cols="8"><SliderProducts /></v-col>
+          </v-row>
         </div>
-    </div>
-    <div>
-       <Products />
-    </div>
+      </div>
+      <div>
+        <Products />
+      </div>
+    </v-container>
   </div>
-  
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions } from "vuex";
 
-import Categories from '../components/Categories.vue'
-import SliderProducts from '../components/SliderProducts.vue'
-import Products from '../components/Products.vue'
+import Categories from "../components/Categories.vue";
+import SliderProducts from "../components/SliderProducts.vue";
+import Products from "../components/Products.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Categories,
     SliderProducts,
-    Products  
-    },
-    methods: {
-    ...mapActions(['getHomeProducts'])
-    },
-    mounted () {
-      this.getHomeProducts()
-    }
-}
+    Products,
+  },
+  methods: {
+    ...mapActions(["getHomeProducts"]),
+  },
+  mounted() {
+    this.getHomeProducts();
+  },
+};
 </script>
 
 <style>
@@ -47,17 +48,16 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  
 }
-.col-style{
+.col-style {
   text-align: center;
 }
 
-  .main {
-    margin-top: 3rem;
-  }
+.main {
+  margin-top: 3rem;
+}
 
-.main-row{
+.main-row {
   display: flex;
   flex-direction: row;
 }
@@ -77,13 +77,12 @@ export default {
   padding: 1rem;
   border-radius: 1rem;
 }
-.footy{
+.footy {
   background-color: #212529;
   padding-top: 3rem;
   padding-bottom: 0.5rem;
-  
 }
-.foot{
+.foot {
   background-color: #212529;
   padding-bottom: 1rem;
 }
