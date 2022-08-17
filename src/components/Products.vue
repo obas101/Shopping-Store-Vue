@@ -75,13 +75,13 @@ export default {
   margin: 0.1rem;
 }
 .itemName-style {
-  font-size: 12px;
+  font-size: 14px;
   /* text-align: center !important; */
 }
 .price {
   font-size: 14px;
   text-align: left;
   color: #282828;
-  font-weight: 500;
+  font-weight: bold;
 }
 </style>
