@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     "bootstrap": "^4.6.1",
     "core-js": "^3.6.4",
     "material-design-icons-iconfont": "^5.0.1",
