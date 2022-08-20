@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container grid-list-xl gap="2">
     <div class="stylusdiv">
       <div
         v-bind:key="display.productId"
